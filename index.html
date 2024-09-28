@@ -1,0 +1,147 @@
+<DOCTYPE html>
+  <html lang="id">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>QuizEduventure</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <style>
+        .video-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        
+        video {
+          width: 100%;
+          height: auto;
+          max-width: 800px; /* batas lebar maksimum */
+    
+        }
+        body {
+            background-image: url('1.jpg'); /* Ganti dengan lokasi gambar */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+            background-size: cover; /* Gambar akan menyesuaikan ukuran layar */
+            background-position: center; /* Gambar akan diposisikan di tengah */
+        }
+
+      </style>
+    </head>
+    
+    <body>
+      <h2 style=" font-style: italic; text-align: center; font-family: 'Arial', sans-serif; font-size: 3em; color: #1e7404; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); margin-top: 20px;">
+        EDUVENTURE
+      </h2>
+      
+    <br><br>
+      <main id="container">
+        <div class="start_container">
+          <br><br><br><br><br><br><br><br><br><br><b<br><br><br><br>
+          <div class="start_btn">
+            <button>
+                <i>Gasz Skuy!</i> <span></span>
+            </button>
+        </div>
+        
+          <div class="leaderboard"><button></button></div>
+        </div>
+
+        <div class="name_box">
+          <input type="text" class="name" placeholder="Siapa namamu?" />
+          <input type="button" class="name_btn" value="Oke! ayo kita Mulai" />
+        </div>
+
+        <div class="instructions">
+          <div class="info_title">
+            <span>Aturan dalam Quiz ini</span>
+          </div>
+          <div class="info_list">
+            <div class="info">
+              1. kamu hanya punya waktu <span style="color: black;">15 detik</span> per setiap
+              pertanyaan.
+            </div>
+            <div class="info">
+              2. Setelah Anda memilih jawaban Anda, Anda tidak dapat memilih
+              ulang.
+            </div>
+            <div class="info">
+              3. Anda tidak dapat memilih opsi apa pun setelah waktu habis
+            </div>
+            <div class="info">
+              4. Anda tidak dapat keluar dari Kuis saat Anda bermain.
+            </div>
+            <div class="info">
+              5. Setelah Anda selesai Klik "Kirim Skor" agar masuk ke
+              leadeboard.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="quit">Nyerah</button>
+            <button class="restart">Lanjut</button>
+          </div>
+        </div>
+        <div class="math-quiz">
+          <header>
+            <div class="title">Quiz Matematika</div>
+            <div class="timer">
+              <div class="time_text">Sisa Waktu</div>
+              <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+          </header>
+          <section>
+            <div>
+              <span id="questions"
+                ><p id="num1"></p>
+                X
+                <p id="num2"></p
+              ></span>
+            </div>
+            <div class="option_list">
+              <div class="option" id="option1"></div>
+              <div class="option" id="option2"></div>
+              <div class="option" id="option3"></div>
+              <div class="option" id="option4"></div>
+            </div>
+          </section>
+          <footer>
+            <div class="points">
+              <div class="point_text">Skor kamu</div>
+              <div style="font-weight: bold;" class="point_no">0</div>
+            </div>
+            <button class="next_btn">Tampilkan Hasilnya</button>
+          </footer>
+        </div>
+        <div class="result_box">
+          <div>
+            Skor Tertinggi:
+            <p>100 Poin</p>
+          </div>
+          <div class="icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="complete_text">
+            Selamat! kamu berhasil menyelesaikan Quiz
+          </div>
+          <div class="score_text"></div>
+          <div class="buttons">
+            <a href="https://forms.gle/AgRkhvPmXTbNghuo7">
+              <button style="color: #fff;background: #007bff;" class="restart">
+                Ambil Sertifikat!
+              </button>
+            </a>
+
+            <button style="color: #fff;
+              background: #1eff00;" class="quit">Main Lagi</button>
+          </div>
+        </div>
+      </main>
+    </body>
+
+    <script type="text/javascript" src="index.js"></script>
+  </html>
+</DOCTYPE>
